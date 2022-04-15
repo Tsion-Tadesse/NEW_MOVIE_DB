@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+ body{
+        background-color:#d3d3d3;
+       }
+        .user_login{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<form class="user_login" action="{{url_for('login')}}" method="post">
+    <h2>Sign Up</h2>
+    <h2>{{message}}</h2>
+    <label>First name</label>
+    <input type="text" placeholder="first name" name="fname" REQUIRED/><br><br>
+    <label>Last name </label>
+    <input type="text" placeholder="last name" name = "lname"required/><br><br>
+     <label> Username</label>
+     <input type="text" placeholder="username" name="user_id"required/><br><br>
+     <label>password</label>
+    <input type="text" placeholder="password" name="password "required/><br><br>
+     <label></label>
+    Click here if you're employee: <input type="checkbox" onclick=""/><br><br>
+    <input type="submit" value="Sign up" /><br>
+</form>
+</body>
+</html>

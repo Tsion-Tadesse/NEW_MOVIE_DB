@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+    body{
+    background-color:#d3d3d3;
+
+    }
+         .home_nav_bar{
+         overflow: hidden;
+        background-color: black;
+        }
+        .home_nav_bar a{
+            float: left;
+            padding: 11px 7px;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+        .home_nav_bar a:hover{
+            background-color: blue;
+        }
+        form.search button{
+            background-color: blue;
+            padding: 5px;
+        }
+        form.search input{
+            padding: 6px;
+            width: 180px;
+        }
+        .search_div{
+            position: absolute;
+            right:10px;
+        }
+        .reservation_div{
+            border: ridge;
+            position: absolute;
+            text-align: center;
+            left:8px;
+            background-color: brown;
+        }
+        table tr td{
+            padding: 10px;
+        }
+        .movie_listing{
+
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="home_nav_bar">
+    <a href="/">Home</a>
+    <form action="http://127.0.0.1:8000/movie" method="POST">
+       <a><button type="submit" style="background-color: black; font-size:20px; color:white;">Movie</button></a>
+
+    </form>
+
+    <a href="/ticket">Get Ticket</a>
+    <a href="/search">Search Movies</a>
+    <a href="/login">log-in/Sign up</a>
+</div>
+<br><br>
+<div class="reservation_div">
+    <table id="t">
+        <th>
+            <h3>Reserve Ticket</h3>
+        </th>
+        <tr>
+            <td><input type="datetime-local"> </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="POST">
+                    <select id="genre" name="genre" >
+                        <option value="all">All genre</option>
+                        <option value="comedy" name="comedy">Comedy</option>
+                        <option value="m2" name="crime">Crime</option>
+                        <option value="m3" name="Science Fiction">Science Fiction</option>
+                        <option value="m4" name="documentary">Documentary</option>
+                        <option value="m5" name="romantic">Romantic</option>
+                        <option value="m5" name="horror">Horror</option>
+                </select>
+
+                </form>
+
+            </td>
+        </tr>
+         <tr>
+            <td><input style=" padding:5px 5px;" type="submit" value="Show result" /> </td>
+
+        </tr>
+    </table>
+
+</div>
+
+
+
+<!--Fix get ticket button to display ticket of that particular movie -->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!--
+<hr>
+<table class="movie_listing" style="background-color:none;">
+    <th>Movies On the Screen...</th>
+    <tr style="padding: 20px 30px;">
+        <th><img src="moviesamp1.png" /></th>
+        <td>
+        Rated: PG-13
+        Description: blah blah blah
+            <td><input type="submit" value="Get ticket" href="/ticket" /></td>
+        </td>
+
+ </tr>
+    <th><img src="moviesamp2.png" /></th>
+    <td>
+    Rated: PG-13
+    Description: blah blah blah
+
+        <td><input type="submit" value="Get ticket" href="/ticket"/></td>
+    </td>
+
+     </tr>
+    <tr>
+        <td><img src="moviesamp3.png" /></td>
+        <td>
+    Rated: PG-13
+    Description: blah blah blah
+            <td><input type="submit" value="Get ticket" href="/ticket"/></td>
+</td>
+    </tr>
+
+    <tr>
+        <td><img src="moviesamp4.png" /></td>
+        <td>
+    Rated: PG-13
+    Description: blah blah blah
+            <td><input type="submit" value="Get ticket" href="/ticket"/></td>
+</td>
+    </tr>
+
+<br>
+
+
+-->
+
+</table>
+</body>
+</html>

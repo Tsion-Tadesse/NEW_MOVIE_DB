@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+    <style>
+        .user_login{
+            text_align: center;
+        }
+        .ul_div{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+         body{
+        background-color:#d3d3d3;
+       }
+       .home_nav_bar{
+         overflow: hidden;
+        background-color: black;
+        }
+        .home_nav_bar a{
+            float: left;
+            padding: 11px 7px;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .home_nav_bar a:hover{
+            background-color: blue;
+            }
+
+    </style>
+</head>
+<body>
+<div class="home_nav_bar">
+    <a href="/">Home</a>
+
+</div>
+<div class="ul_div">
+    <form class="user_login" action="" method="post">
+    <h2>Log in</h2>
+        <label>User name:</label>
+    <input type="text" placeholder="user name" REQUIRED/><br><br>
+        <label>Password:</label>
+     <input type="text" placeholder="password" required/><br><br>
+    <input type="submit" value="Log in" /><br>
+    <a href="/reset_pwd" ><u>Forgot your password?</u></a><br><br>
+</form>
+    <button><a href="/account_registeration" style="text-decoration:none;">Create an Account</a></button>
+
+</div>
+</body>
+</html>
